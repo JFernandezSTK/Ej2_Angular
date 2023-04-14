@@ -1,0 +1,20 @@
+<p>Correo electronico: <input type="text" [(ngModel)]="correo"/></p>
+<p>Direccion: <input type="text" [(ngModel)]="direccion"/></p>
+<p>Telefono: <input type="text" [(ngModel)]="telefono"/></p>
+<p>comunidad: 
+    <select [(ngModel)]="comunidad">
+        <option value="Madrid" >Madrid</option>
+        <option value="Valencia" >Valencia</option>
+        <option value="Pais Vasco" >Pais Vasco</option>
+        <option value="Galicia">Galicia</option>
+    </select>
+</p>
+<p>Forma de Pago:
+        <input type="radio" name="pagos" [(ngModel)]="pago" value="Efectivo"/>Efectivo
+        <input type="radio" name="pagos" [(ngModel)]="pago" value="Tarjeta"/>Tarjeta
+        <input type="radio" name="pagos" [(ngModel)]="pago" value="Contra-reembolso"/>Contra-reembolso
+</p>
+
+<p><input type="checkbox" [(ngModel)]="info"/>Acepta recibir informacion de nuestros productos</p>
+<button (click)="Muestrainfo()">Continuar</button>
+<p>Ha seleccionado las siguientes opciones: {{texto}}</p>
